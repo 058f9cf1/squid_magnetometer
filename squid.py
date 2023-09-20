@@ -26,12 +26,7 @@ print(z_distance-z_distance[-1]/2)
 
 
 
-
-
-
 M = np.array([[0], [0.000000015], [0]])
-
-
 
 
 def calculate_angles(xoffset, yoffset, mode):
@@ -66,34 +61,11 @@ def calculate_angles(xoffset, yoffset, mode):
 	return np.arccos(cos_theta), np.arccos(cos_phi)
 
 
-
-
-
-
-
-
-
-
-
 #Create a 3D array with the euclidean distance from the origin stored at each point in metres
 x, y, z = np.ogrid[0:grid_size[0], 0:grid_size[1],0: grid_size[2]]
 r = (((x-origin[0])**2 + (y-origin[1])**2 + (z-origin[2])**2)**0.5)*step
 r_cubed = (((x-origin[0])**2 + (y-origin[1])**2 + (z-origin[2])**2)**1.5)*step/1000000
 print(r)
-
-
-
-
-############################################################################################################################################################
-
-
-
-
-
-
-
-
-
 
 
 
